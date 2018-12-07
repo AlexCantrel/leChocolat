@@ -7,6 +7,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="css/my.css" rel="stylesheet">
 
     <title>Le Chocolat</title>
 
@@ -74,9 +75,202 @@
                 <hr>
             </div>
         </div>
-        <div class="row">
-                <h3>Under heavy construction!!</h3>
-                <hr>
+
+
+        <div class="container">
+            <div class="row">
+
+                <section class="content">
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="pull-right">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success btn-filter" data-target="pay">Pay</button>
+                                        <button type="button" class="btn btn-warning btn-filter" data-target="basket">Basket</button>
+                                        <button type="button" class="btn btn-danger btn-filter" data-target="cancel">Cancel</button>
+                                        <button type="button" class="btn btn-default btn-filter" data-target="all">All</button>
+                                    </div>
+                                </div>
+                                <div class="table-container">
+                                    <table class="table table-filter">
+                                        <tbody>
+                                            <tr data-status="pay">
+                                                <td>
+                                                    <div class="ckbox">
+                                                        <input type="checkbox" id="checkbox1">
+                                                        <label for="checkbox1"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" class="star">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media">
+                                                        <a href="#" class="pull-left">
+                                                            <img src="./images/dark85.jpg" class="media-photo">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="title">
+                                                                Dark Chocolate
+                                                            </h4>
+                                                            <p class="summary">Rich flavor of cocoa</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr data-status="basket">
+                                                <td>
+                                                    <div class="ckbox">
+                                                        <input type="checkbox" id="checkbox3">
+                                                        <label for="checkbox3"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" class="star">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media">
+                                                        <a href="#" class="pull-left">
+                                                            <img src="./images/mintchocolate.jpeg" class="media-photo">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="title">
+                                                                Mint Chocolate
+                                                            </h4>
+                                                            <p class="summary">Dark chocolate with mint flavors</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr data-status="cancel">
+                                                <td>
+                                                    <div class="ckbox">
+                                                        <input type="checkbox" id="checkbox2">
+                                                        <label for="checkbox2"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" class="star">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media">
+                                                        <a href="#" class="pull-left">
+                                                            <img src="./images/plain-milk-chocolate-250x250.jpg" class="media-photo">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="title">
+                                                                Milk Chocolate
+                                                            </h4>
+                                                            <p class="summary">Classic milk Chocolate</p>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr data-status="pay" class="selected">
+                                                <td>
+                                                    <div class="ckbox">
+                                                        <input type="checkbox" id="checkbox4">
+                                                        <label for="checkbox4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" class="star star-checked">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media">
+                                                        <a href="#" class="pull-left">
+                                                            <img src="./images/white.jpg" class="media-photo">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="title">
+                                                                White Chocolate
+                                                            </h4>
+                                                            <p class="summary">Unbelievable taste of butter</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr data-status="basket">
+                                                <td>
+                                                    <div class="ckbox">
+                                                        <input type="checkbox" id="checkbox5">
+                                                        <label for="checkbox5"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" class="star">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media">
+                                                        <a href="#" class="pull-left">
+                                                            <img src="./images/whiteberries.jpg" class="media-photo">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="title">
+                                                                White Chocolate with berries
+                                                            </h4>
+                                                            <p class="summary">This combination is excellent</p>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr data-status="basket">
+                                                    <td>
+                                                        <div class="ckbox">
+                                                            <input type="checkbox" id="checkbox6">
+                                                            <label for="checkbox5"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:;" class="star">
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media">
+                                                            <a href="#" class="pull-left">
+                                                                <img src="./images/bisquits.jpg" class="media-photo">
+                                                            </a>
+                                                            <div class="media-body">
+                                                                <h4 class="title">
+                                                                    Chocolate bisquits
+                                                                </h4>
+                                                                <p class="summary">Just taste them</p>
+                                                            </div>
+                                                        </div>
+    
+                                                    </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-footer">
+                            <p>
+                                2018 <br>
+                                <a target="_blank">AlexC</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
         </div>
 
     </div>
@@ -141,11 +335,8 @@
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-             /*   $(function () {
-                    $('[data-toggle="tooltip"]').tooltip()
-                })*/
-    </script>
+    <script src="./my.js"></script>
+    
 </body>
 
 </html>
